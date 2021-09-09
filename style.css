@@ -1,0 +1,118 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:#1f3253;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    padding-bottom: 10px;
+    text-align: center;
+}
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.container{
+    color: #fff;
+    font-size: 20px;
+}
+
+#survey-form{
+    margin: auto;
+    width: 50%;
+    background: #141e30;
+    padding: 2.5rem 0.625rem;
+    border: solid 2px black;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: start;
+}
+
+.form-group{
+    margin: auto;
+    width: 90%;
+}
+
+label {
+    display: flex;
+    justify-content: start;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control{
+    margin: auto;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+}
+
+.input-textarea{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+}
+
+.submit-button{
+    margin: auto;
+    width: 25%;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    border: solid 3px rgb(53, 46, 46);
+    border-radius: 1.25em;
+}
+button:hover{
+    background-color:rgb(143, 26, 26);
+}
+
+@media screen and (max-width: 1020px) {
+    #survey-form{
+        width: 60%;
+    }
+    .submit-button{
+        width: 30%;
+    }
+    
+}
+@media screen and (max-width: 780px) {
+    #survey-form{
+        width: 75%;
+    }
+    h1 {
+       font-size: 30px;
+    }
+    .submit-button{
+        width: 40%;
+    }
+        
+}
+@media screen and (max-width: 480px) {
+    #survey-form{
+        width: 85%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .submit-button{
+        width: 50%;
+    }
+
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey for Software Developer</h1>
+            <p id="description">A little try of working with form.</p>
+        </header>
+
+        <form id="survey-form" action="formFillUpConfirmation.html">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"required/>
+            </div><br>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+            </div><br>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="80" class="form-control" placeholder="Age"/>
+            </div><br>
+
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select current role</option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Job</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+               <p>Which Programming language you love most?</p>
+               <label><input name="user-recommend" value="JavaScript" type="radio" class="input-radio" checked/>JavaScript</label>
+               <label><input name="user-recommend" value="Python" type="radio" class="input-radio"/>Python</label>
+               <label><input name="user-recommend" value="PHP" type="radio" class="input-radio"/>PHP</label>
+               <label><input name="user-recommend" value="Others" type="radio" class="input-radio"/>Others</label>
+            </div><br>
+
+            <div class="form-group">
+                <p>Best learning process for you?</p>
+                <select id="dropdown" name="process" class="form-control" required>
+                  <option disabled selected value>Choose your best way by</option>
+                  <option value="reading">Reading Theory</option>
+                  <option value="projects">Doing Projects</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+              <p>Which position you are working or want to work?<span class="clue">(Check all that apply)</span></p>
+              <label><input name="prefer" value="Front-end-Developer" type="checkbox" class="input-checkbox"/>Front-end Developer</label>
+              <label><input name="prefer" value="Back-end-Developer" type="checkbox" class="input-checkbox"/>Back-end Developer</label>
+              <label><input name="prefer" value="Full-stack-Developer" type="checkbox" class="input-checkbox"/>Full-stack Developer</label>
+              <label><input name="prefer" value="App-Developer" type="checkbox" class="input-checkbox"/>App Developer</label>
+            </div>  <br>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div><br>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form><br>
+    </div>
+    
+</body>
+</html>
